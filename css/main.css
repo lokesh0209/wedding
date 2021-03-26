@@ -10,8 +10,8 @@ body {
   background-size: cover;
   background-position: 70%;
   height: 100vh;
-  min-height: 450px;
-  max-height: 450px; }
+  min-height: auto;
+  max-height: auto; }
   .ww-home-page .ww-wedding-announcement {
     width: 100%;
     max-width: 1600px;
