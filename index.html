@@ -41,8 +41,27 @@
 <div class="ww-home-page" id="home">
   <div class="ww-wedding-announcement d-flex align-items-center justify-content-start">
     <div class="container ww-announcement-container">
-      <p class="ww-couple-name ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000">Deepak weds Dimple</p><img class="img-fluid mt-1" src="images/laurel-121.png" alt="Heart" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000"/>
+      <p class="ww-couple-name ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000">Deepak weds Dimple</p>
+     
+      <img class="img-fluid mt-1" src="images/laurel-121.png" alt="Heart" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000"/>
       <p class="ww-couple-name ww-title" data-aos="zoom-in-down" data-aos-delay="300" data-aos-duration="1000" data-aos-offset="10">21<sup>st</sup> April, 2021</p>
+      <P class="flex-w flex-c cd100 respon2">
+				<div class="flex-col-c wsize1 m-b-30">
+					<span class="l1-txt2 p-b-37 days">35</span>
+					<span class="m1-txt2 p-r-20">Days</span>
+          	<span class="l1-txt2 p-t-15 dis-none-sm">:</span>
+            <span class="l1-txt2 p-b-37 hours">17</span>
+            <span class="m1-txt2 p-r-20">Hr</span>
+            <span class="l1-txt2 p-t-15 dis-none-lg">:</span>
+            <span class="l1-txt2 p-b-37 minutes">50</span>
+            <span class="m1-txt2 p-r-20">Min</span>
+            
+				<span class="l1-txt2 p-t-15 dis-none-sm">:</span>
+        <span class="l1-txt2 p-b-37 seconds">39</span>
+        <span class="m1-txt2 p-r-20">Sec</span>
+				</div>
+			</p>
+    
     </div>
   </div>
 </div>
@@ -306,5 +325,42 @@
     <script src="scripts/aos.js?ver=1.1.0"></script>
     <script src="scripts/ekko-lightbox.min.js?ver=1.1.0"></script>
     <script src="scripts/main.js?ver=1.1.0"></script>
+
+  <!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="vendor/countdowntime/moment.min.js"></script>
+    <script src="vendor/countdowntime/moment-timezone.min.js"></script>
+    <script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+	<script>
+		$('.cd100').countdown100({
+			/*Set Endtime here*/
+			/*Endtime must be > current time*/
+			endtimeYear: 0,
+			endtimeMonth: 0,
+			endtimeDate: 35,
+			endtimeHours: 19,
+			endtimeMinutes: 0,
+			endtimeSeconds: 0,
+			timeZone: "" 
+			// ex:  timeZone: "America/New_York"
+			//go to " http://momentjs.com/timezone/ " to get timezone
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
   </body>
 </html>
